@@ -56,6 +56,7 @@ const Navbar = () => {
             </ul>
           )}
         </div>
+        <Link to="/team" onClick={handleClick}><li className="my-4 py-4 border-b border-gray-300 hover:bg-green-700 hover:rounded">Team</li></Link>
         <Link to="/gallery" onClick={handleClick}>
           <li className="my-4 py-4 border-b border-gray-300 hover:bg-green-700 hover:rounded">Gallery</li>
         </Link>
@@ -95,7 +96,7 @@ const Navbar = () => {
                 </ul>
               )}
             </div>
-            
+            <NavLink to="/team" className="hover:text-green-600 transition"><li>Team</li></NavLink>
             <NavLink to="/gallery" className="hover:text-green-600 transition hover:border-green-600 cursor-pointer">
               <li>Gallery</li>
             </NavLink>
